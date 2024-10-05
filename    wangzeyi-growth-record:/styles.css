@@ -1,0 +1,193 @@
+/* 添加瘦金体字体声明 */
+@font-face {
+    font-family: 'ShouJinTi';
+    src: url('path/to/shoujinti.woff2') format('woff2'),
+         url('path/to/shoujinti.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 将整个 body 的字体设置为瘦金体 */
+body {
+    font-family: 'ShouJinTi', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background-color: #e6f2ff; /* 添加柔和的蓝色背景 */
+}
+
+/* 更新轮播容器样式 */
+.swiper-container {
+    width: 100%;
+    height: 250px; /* 进一步减小高度 */
+    margin-bottom: 20px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 改为 contain 以显示整个图片 */
+    border-radius: 8px;
+    background-color: #f0f0f0; /* 添加背景色，以便在图片不填满时更美观 */
+}
+
+/* 为了确保内容区域与背景有足够的对比度，我们可以为主要内容添加白色背景 */
+main section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 调整导航栏颜色以配合新的背景色 */
+.navbar {
+    background-color: #b3d9ff !important; /* 稍深一点的蓝色 */
+}
+
+/* 添加更多自定义样式 */
+
+/* 在文件末尾添加以下样式 */
+.swiper-container {
+    width: 100%;
+    height: 400px; /* 调整高度以适应您的需求 */
+    margin-bottom: 30px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.5);
+    padding: 30px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.swiper-pagination-bullet {
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+/* 调整导航按钮大小 */
+.swiper-button-next, .swiper-button-prev {
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 20px; /* 减小箭头大小 */
+}
+
+/* 调整导航按钮大小和位置 */
+.swiper-button-next, .swiper-button-prev {
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px 8px;
+    transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 18px; /* 进一步减小箭头大小 */
+}
+
+/* 确保在小屏幕上轮播仍然美观 */
+@media (max-width: 768px) {
+    .swiper-container {
+        height: 200px;
+        margin-top: 20px;
+    }
+}
+
+/* 其他样式保持不变 */
+
+/* 首页特定样式 */
+#home {
+    background-color: #e6f2ff;
+}
+
+/* 照片展示特定样式 */
+#photos {
+    background-color: #f0f0f0;
+}
+
+/* 成长日记特定样式 */
+#diary {
+    background-color: #fff5e6;
+}
+
+/* 特别时刻特定样式 */
+#milestones {
+    background-color: #e6ffe6;
+}
+
+/* 留言板特定样式 */
+#guestbook {
+    background-color: #ffe6e6;
+}
+
+/* 关于我们特定样式 */
+#about {
+    background-color: #e6e6ff;
+}
+
+/* 联系我们特定样式 */
+#contact {
+    background-color: #f2f2f2;
+}
+
+/* 为每个页面添加一些内边距和圆角 */
+.page-section {
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/* 在文件末尾添加以下样式 */
+
+/* 首页轮播样式 */
+.home-swiper {
+    height: 250px;
+}
+
+/* 照片展示页面轮播样式 */
+.photos-swiper {
+    height: 400px;
+    margin-top: 20px;
+}
+
+/* 照片展示页面的轮播图片样式 */
+.photos-swiper .swiper-slide img {
+    object-fit: cover; /* 确保图片填满整个滑块 */
+}
+
+/* 其他样式保持不变 */
+
+/* 成长日记样式 */
+#diary {
+    background-color: #fff5e6;
+}
+
+.diary-entry {
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease;
+}
+
+.diary-entry:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#diaryEntries {
+    max-height: 500px;
+    overflow-y: auto;
+}
